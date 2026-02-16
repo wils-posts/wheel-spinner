@@ -705,6 +705,7 @@
     top: 1rem;
     max-height: calc(100vh - 5rem);
     overflow-y: auto;
+    order: -1;
   }
 
   .app-main-right {

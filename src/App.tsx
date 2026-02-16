@@ -43,26 +43,6 @@ function App() {
         <ThemeToggle />
       </header>
       <main className="app-main">
-        <div className="app-main-left">
-          <ProfileSelector />
-          <ProfileManager />
-          <ItemEditor />
-          <CollapsibleSection title="Settings">
-            <WheelSettingsPanel />
-          </CollapsibleSection>
-          <CollapsibleSection title="History">
-            <HistoryPanel />
-          </CollapsibleSection>
-          <CollapsibleSection title="Probabilities">
-            <WeightTransparency />
-          </CollapsibleSection>
-          <CollapsibleSection title="Fairness Test">
-            <DistributionTest />
-          </CollapsibleSection>
-          <CollapsibleSection title="Import / Export">
-            <ProfileExport />
-          </CollapsibleSection>
-        </div>
         <div className="app-main-right">
           <div className="wheel-container" style={{ position: 'relative' }}>
             <WheelCanvas />
@@ -83,6 +63,26 @@ function App() {
               visible={phase === 'result'}
             />
           </div>
+        </div>
+        <div className="app-main-left">
+          <ProfileSelector />
+          <ProfileManager />
+          <ItemEditor />
+          <CollapsibleSection title="Settings">
+            <WheelSettingsPanel />
+          </CollapsibleSection>
+          <CollapsibleSection title="History">
+            <HistoryPanel />
+          </CollapsibleSection>
+          <CollapsibleSection title="Probabilities">
+            <WeightTransparency />
+          </CollapsibleSection>
+          <CollapsibleSection title="Fairness Test">
+            <DistributionTest />
+          </CollapsibleSection>
+          <CollapsibleSection title="Import / Export">
+            <ProfileExport />
+          </CollapsibleSection>
         </div>
       </main>
     </div>
