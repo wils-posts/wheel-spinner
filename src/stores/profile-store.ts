@@ -50,10 +50,6 @@ function createItem(label: string, weight = 1): WheelItem {
   };
 }
 
-function getActiveProfile(state: { profiles: Profile[]; activeProfileId: string | null }): Profile | undefined {
-  return state.profiles.find((p) => p.id === state.activeProfileId);
-}
-
 function updateActiveProfile(
   state: { profiles: Profile[] },
   activeProfileId: string | null,
